@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Загружаем и готовим данные
 @st.cache_data
 def load_data():
-    uploaded_file = st.file_uploader("Загрузите файл с играми (CSV)", type=["csv"])
+    uploaded_file = st.file_uploader("games-1.csv", type=["csv"])
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
         df['Название'] = df['Название'].fillna('')
