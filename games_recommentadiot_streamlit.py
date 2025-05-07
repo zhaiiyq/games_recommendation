@@ -123,7 +123,7 @@ st.markdown("""
             -2px -2px 0px black,  
             2px -2px 0px black, 
             -2px 2px 0px black;
-        font-size: 50px;
+        font-size: 35px;
         letter-spacing: 3px;
     '> Рекомендательная система для игр</h1>
 """, unsafe_allow_html=True)
