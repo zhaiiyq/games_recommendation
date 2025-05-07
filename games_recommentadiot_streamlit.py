@@ -114,11 +114,17 @@ st.markdown("""
         text-align: center;
         color: white;
         font-family: "Courier New", Courier, monospace;
-        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.6), 0px 0px 15px rgba(255, 255, 255, 0.4);
+        font-weight: bold;
+        text-shadow: 
+            2px 2px 0px black, 
+            -2px -2px 0px black,  
+            2px -2px 0px black, 
+            -2px 2px 0px black;
         font-size: 40px;
         letter-spacing: 2px;
-    '> Рекомендательная система для игр</h1>
+    '>Рекомендательная система для игр</h1>
 """, unsafe_allow_html=True)
+
 
 
 
