@@ -7,7 +7,7 @@ def set_background():
     background_style = '''
     <style>
     body {
-        background-image: url('https://media.tenor.com/TjX8dj1RxjsAAAAM/sbp-stop-being-poor.gif');
+        background-image: url('minecraft-cherry.gif');
         background-size: cover;
         background-attachment: fixed;
     }
@@ -15,17 +15,12 @@ def set_background():
         background-color: rgba(255, 255, 255, 0.8);
         padding: 2rem;
         border-radius: 10px;
-        font-family: 'Press Start 2P', cursive;
-    }
-    h1, h2, h3, h4, h5, h6, p {
-        font-family: 'Press Start 2P', cursive;
-        color: #FFFFFF;
     }
     </style>
     '''
     st.markdown(background_style, unsafe_allow_html=True)
 
-# Установка фона и шрифта
+# Установка фона
 set_background()
 
 # Загружаем и готовим данные
