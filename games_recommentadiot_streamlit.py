@@ -3,15 +3,11 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Добавляем стили: фон, шрифт, неоновый эффект
 st.markdown("""
     <style>
-    @import url('https://raw.githubusercontent.com/zhaiiyq/games-recommendation/main/minecraft-cherry.gif');
-
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://raw.githubusercontent.com/zhaiiyq/games-recommendation/main/minecraft-cherry.gif
-');
+        background-image: url('https://raw.githubusercontent.com/zhaiiyq/games-recommendation/main/minecraft-cherry.gif');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -56,6 +52,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Загружаем и готовим данные
 @st.cache_data
