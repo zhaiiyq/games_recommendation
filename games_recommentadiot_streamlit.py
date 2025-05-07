@@ -4,21 +4,24 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def set_background():
-    background_style = f'''
-    <style>
-    body {{
-        background-image: url("{'https://media.tenor.com/images/3cde75d595f3ffb52e567256a32a12b5/tenor.gif'}");
-        background-size: cover;
-        background-attachment: fixed;
-    }}
-    .stApp {{
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 2rem;
-        border-radius: 10px;
-    }}
-    </style>
-    '''
-    st.markdown(background_style, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <style>
+        body {
+            background-image: url('https://media.tenor.com/images/3cde75d595f3ffb52e567256a32a12b5/tenor.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .stApp {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        </style>
+        """, 
+        unsafe_allow_html=True
+    )
 
 # Установка фона
 set_background()
