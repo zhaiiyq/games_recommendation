@@ -6,10 +6,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 def set_retro_background():
     retro_style = '''
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    
     body {
         background-color: #000000;
         font-family: 'Press Start 2P', cursive;
-        color: #ffffff;
+        color: #00FF00;
         text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.8);
     }
     .stApp {
@@ -21,12 +23,12 @@ def set_retro_background():
     h1, h2, h3 {
         font-family: 'Press Start 2P', cursive;
         text-align: center;
-        color: #00ff00;
+        color: #00FF00;
     }
     .stButton>button {
-        background-color: #00ff00;
+        background-color: #00FF00;
         color: #000000;
-        border: 2px solid #00ff00;
+        border: 2px solid #00FF00;
         font-size: 16px;
         padding: 10px 20px;
         border-radius: 5px;
@@ -35,18 +37,20 @@ def set_retro_background():
     }
     .stButton>button:hover {
         background-color: #000000;
-        color: #00ff00;
-        border: 2px solid #00ff00;
+        color: #00FF00;
+        border: 2px solid #00FF00;
     }
     .stTextInput>div>input {
         background-color: #222222;
-        color: #00ff00;
-        border: 2px solid #00ff00;
+        color: #00FF00;
+        border: 2px solid #00FF00;
     }
     </style>
     '''
     st.markdown(retro_style, unsafe_allow_html=True)
 
+# Вставь эту функцию в начале своего кода, чтобы она применялась ко всем компонентам интерфейса.
+set_retro_background()
 
 
 # Загружаем и готовим данные
