@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://i.imgur.com/Tx4IRjd.gif');
+        background-image: url('https://i.imgur.com/ayF1mZA.gif');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -117,7 +117,7 @@ st.markdown("""
         text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8), 0px 0px 10px rgba(255, 255, 255, 0.6), 0px 0px 15px rgba(255, 255, 255, 0.4);
         font-size: 40px;
         letter-spacing: 2px;
-    '>🎮 Рекомендательная система для игр</h1>
+    '> Рекомендательная система для игр</h1>
 """, unsafe_allow_html=True)
 
 
