@@ -11,44 +11,45 @@ st.markdown("""
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        font-family: 'Orbitron', sans-serif;
-        color: #e0e0e0;
+        background-repeat: no-repeat;
+        color: #f0f0f0;
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Orbitron', sans-serif;
-        color: #00ffff;
-        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+        color: #ffffff;
+        text-shadow: 0 0 8px #000000;
     }
 
     .stTextInput > div > div > input {
         background-color: #1e1e2f;
-        color: #00ffff;
-        border: 1px solid #00ffff;
+        color: #ffffff;
+        border: 1px solid #ffffff;
     }
 
     .stSelectbox > div > div > div > div {
         background-color: #1e1e2f;
-        color: #00ffff;
+        color: #ffffff;
     }
 
     .stTabs [data-baseweb="tab"] {
         background-color: #1e1e2f;
         border-radius: 10px 10px 0 0;
-        color: #00ffff;
+        color: #ffffff;
     }
 
     .stButton > button {
-        background-color: #00ffff;
-        color: #000000;
+        background-color: #222;
+        color: #ffffff;
+        border: 1px solid #ffffff;
         font-weight: bold;
         border-radius: 10px;
         transition: 0.3s;
     }
 
     .stButton > button:hover {
-        background-color: #00cccc;
-        color: #000000;
+        background-color: #444;
+        color: #00ffff;
     }
     </style>
 """, unsafe_allow_html=True)
