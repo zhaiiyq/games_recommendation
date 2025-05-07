@@ -3,6 +3,42 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+def set_background():
+    background_style = '''
+    <style>
+    body {
+        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Video-Game-Pixel-Art-Wallpaper-HD.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Press Start 2P', cursive;
+    }
+    .stApp {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 3rem;
+    }
+    h1, h2, h3 {
+        color: #ffcc00;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    }
+    .stButton {
+        background-color: #ffcc00;
+        color: black;
+        border: 2px solid #ffcc00;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .stButton:hover {
+        background-color: #ffd700;
+    }
+    </style>
+    '''
+    st.markdown(background_style, unsafe_allow_html=True)
+
+# Установка фона
+set_background()
+
 # Загружаем и готовим данные
 @st.cache_data
 def load_data(uploaded_file):
