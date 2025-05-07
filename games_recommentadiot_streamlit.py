@@ -8,7 +8,7 @@ def set_background():
     background_style = '''
     <style>
     body {
-        background-image: url('minecraft-cherry.gif');
+        background-image: ('minecraft-cherry.gif');
         background-size: cover;
         background-attachment: fixed;
     }
