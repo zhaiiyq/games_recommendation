@@ -3,39 +3,49 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-def set_background():
-    background_style = '''
+def set_retro_background():
+    retro_style = '''
     <style>
     body {
-        background-image: url('https://www.wallpaperflare.com/static/877/178/497/abstract-art-game-vectors-pixel-wallpaper.jpg');
-        background-size: cover;
-        background-attachment: fixed;
-        font-family: 'Arial', sans-serif;
-        color: #333;
+        background-color: #000000;
+        font-family: 'Press Start 2P', cursive;
+        color: #ffffff;
+        text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.8);
     }
     .stApp {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 15px;
-        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        padding: 3rem;
+        box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
     }
     h1, h2, h3 {
-        color: #f1c40f;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        color: #00ff00;
     }
-    .stButton {
-        background-color: #f1c40f;
-        color: black;
-        border-radius: 8px;
-        padding: 12px 25px;
+    .stButton>button {
+        background-color: #00ff00;
+        color: #000000;
+        border: 2px solid #00ff00;
         font-size: 16px;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
     }
-    .stButton:hover {
-        background-color: #e67e22;
+    .stButton>button:hover {
+        background-color: #000000;
+        color: #00ff00;
+        border: 2px solid #00ff00;
+    }
+    .stTextInput>div>input {
+        background-color: #222222;
+        color: #00ff00;
+        border: 2px solid #00ff00;
     }
     </style>
     '''
-    st.markdown(background_style, unsafe_allow_html=True)
+    st.markdown(retro_style, unsafe_allow_html=True)
 
 # Установка фона
 set_background()
