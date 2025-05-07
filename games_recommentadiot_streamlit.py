@@ -9,26 +9,26 @@ def set_retro_background():
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
     
     body {
-        background-color: #000000;
+        background-color: #f4f4f4;
         font-family: 'Press Start 2P', cursive;
-        color: #00FF00;
-        text-shadow: 2px 2px 10px rgba(0, 255, 0, 0.8);
+        color: #333333;
+        text-shadow: none;
     }
     .stApp {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: #f4f4f4;
         border-radius: 10px;
         padding: 3rem;
-        box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
     h1, h2, h3 {
         font-family: 'Press Start 2P', cursive;
         text-align: center;
-        color: #00FF00;
+        color: #FF5733;
     }
     .stButton>button {
-        background-color: #00FF00;
-        color: #000000;
-        border: 2px solid #00FF00;
+        background-color: #FF5733;
+        color: #FFFFFF;
+        border: 2px solid #FF5733;
         font-size: 16px;
         padding: 10px 20px;
         border-radius: 5px;
@@ -36,14 +36,29 @@ def set_retro_background():
         transition: all 0.2s ease-in-out;
     }
     .stButton>button:hover {
-        background-color: #000000;
-        color: #00FF00;
-        border: 2px solid #00FF00;
+        background-color: #FFFFFF;
+        color: #FF5733;
+        border: 2px solid #FF5733;
     }
     .stTextInput>div>input {
-        background-color: #222222;
-        color: #00FF00;
-        border: 2px solid #00FF00;
+        background-color: #FFFFFF;
+        color: #333333;
+        border: 2px solid #FF5733;
+    }
+    .stDataFrame {
+        background-color: #FFFFFF;
+        color: #333333;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+    }
+    .stDataFrame th {
+        background-color: #FF5733;
+        color: white;
+    }
+    .stDataFrame td {
+        background-color: #F8F8F8;
+        color: #333333;
     }
     </style>
     '''
