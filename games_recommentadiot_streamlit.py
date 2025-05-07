@@ -3,70 +3,30 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-def set_retro_background():
-    retro_style = '''
+def set_background():
+    background_style = '''
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-    
     body {
-        background-color: #f4f4f4;
-        font-family: 'Press Start 2P', cursive;
-        color: #333333;
-        text-shadow: none;
+        background-image: url('https://media.tenor.com/TjX8dj1RxjsAAAAM/sbp-stop-being-poor.gif');
+        background-size: cover;
+        background-attachment: fixed;
     }
     .stApp {
-        background-color: #f4f4f4;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
         border-radius: 10px;
-        padding: 3rem;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    h1, h2, h3 {
         font-family: 'Press Start 2P', cursive;
-        text-align: center;
-        color: #FF5733;
     }
-    .stButton>button {
-        background-color: #FF5733;
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Press Start 2P', cursive;
         color: #FFFFFF;
-        border: 2px solid #FF5733;
-        font-size: 16px;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-    }
-    .stButton>button:hover {
-        background-color: #FFFFFF;
-        color: #FF5733;
-        border: 2px solid #FF5733;
-    }
-    .stTextInput>div>input {
-        background-color: #FFFFFF;
-        color: #333333;
-        border: 2px solid #FF5733;
-    }
-    .stDataFrame {
-        background-color: #FFFFFF;
-        color: #333333;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        padding: 15px;
-    }
-    .stDataFrame th {
-        background-color: #FF5733;
-        color: white;
-    }
-    .stDataFrame td {
-        background-color: #F8F8F8;
-        color: #333333;
     }
     </style>
     '''
-    st.markdown(retro_style, unsafe_allow_html=True)
+    st.markdown(background_style, unsafe_allow_html=True)
 
-# Вставь эту функцию в начале своего кода, чтобы она применялась ко всем компонентам интерфейса.
-set_retro_background()
-
+# Установка фона и шрифта
+set_background()
 
 # Загружаем и готовим данные
 @st.cache_data
