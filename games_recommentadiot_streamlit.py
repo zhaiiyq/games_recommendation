@@ -7,30 +7,31 @@ def set_background():
     background_style = '''
     <style>
     body {
-        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Video-Game-Pixel-Art-Wallpaper-HD.jpg');
+        background-image: url('https://www.wallpaperflare.com/static/877/178/497/abstract-art-game-vectors-pixel-wallpaper.jpg');
         background-size: cover;
         background-attachment: fixed;
-        font-family: 'Press Start 2P', cursive;
+        font-family: 'Arial', sans-serif;
+        color: #333;
     }
     .stApp {
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 10px;
-        padding: 3rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 2rem;
     }
     h1, h2, h3 {
-        color: #ffcc00;
-        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+        color: #f1c40f;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
     .stButton {
-        background-color: #ffcc00;
+        background-color: #f1c40f;
         color: black;
-        border: 2px solid #ffcc00;
-        border-radius: 5px;
-        padding: 10px 20px;
+        border-radius: 8px;
+        padding: 12px 25px;
         font-size: 16px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     }
     .stButton:hover {
-        background-color: #ffd700;
+        background-color: #e67e22;
     }
     </style>
     '''
