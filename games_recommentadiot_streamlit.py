@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+# CSS для фона с GIF
 def set_background():
     background_style = '''
     <style>
@@ -22,6 +23,7 @@ def set_background():
 
 # Установка фона
 set_background()
+
 
 # Загружаем и готовим данные
 @st.cache_data
