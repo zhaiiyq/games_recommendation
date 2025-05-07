@@ -5,26 +5,23 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Загружаем и готовим данные
 @st.cache_data
-def load_data():
-    uploaded_file = st.file_uploader("Загрузите файл с играми (CSV)", type=["csv"])
-    if uploaded_file is not None:
-        df = pd.read_csv(uploaded_file)
-        df['Название'] = df['Название'].fillna('')
-        df['Описание'] = df['Описание'].fillna('')
-        df['Жанры'] = df['Жанры'].fillna('')
-        df['Цена'] = df['Цена'].fillna('')
-        df['Разработчик'] = df['Разработчик'].fillna('')
-        
-        # Взвешивание признаков: Название — важнее, Жанры — тоже весомые
-        df['features'] = (
-            df['Название'] * 3 + ' ' +
-            df['Жанры'] * 2 + ' ' +
-            df['Описание'] + ' ' +
-            df['Разработчик']
-        )
-        
-        return df
-    return None
+def load_data(uploaded_file):
+    df = pd.read_csv(uploaded_file)
+    df['Название'] = df['Название'].fillna('')
+    df['Описание'] = df['Описание'].fillna('')
+    df['Жанры'] = df['Жанры'].fillna('')
+    df['Цена'] = df['Цена'].fillna('')
+    df['Разработчик'] = df['Разработчик'].fillna('')
+    
+    # Взвешивание признаков: Название — важнее, Жанры — тоже весомые
+    df['features'] = (
+        df['Название'] * 3 + ' ' +
+        df['Жанры'] * 2 + ' ' +
+        df['Описание'] + ' ' +
+        df['Разработчик']
+    )
+    
+    return df
 
 # Функция для поиска рекомендаций по запросу
 @st.cache_data
@@ -62,9 +59,12 @@ def recommend(df, title, num_recommendations=5):
 # Интерфейс Streamlit
 st.title("Рекомендательная система для игр")
 
-df = load_data()
+# Загрузка файла через Streamlit
+uploaded_file = st.file_uploader("Загрузите файл с играми (CSV)", type=["csv"])
 
-if df is not None:
+if uploaded_file:
+    df = load_data(uploaded_file)
+
     tab1, tab2 = st.tabs(["Поиск", "Рекомендации"])
 
     with tab1:
@@ -80,3 +80,5 @@ if df is not None:
         if selected_title:
             recommendations = recommend(df, selected_title)
             st.write(recommendations)
+
+
