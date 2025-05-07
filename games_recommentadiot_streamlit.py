@@ -110,10 +110,13 @@ def recommend(df, title, num_recommendations=5):
 
 # Интерфейс Streamlit
 st.markdown("""
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
     <h1 style='
         text-align: center;
         color: white;
-        font-family: "Minecraft", monospace;
+        font-family: "Press Start 2P", cursive;
         font-weight: bold;
         text-shadow: 
             2px 2px 0px black, 
@@ -122,8 +125,9 @@ st.markdown("""
             -2px 2px 0px black;
         font-size: 50px;
         letter-spacing: 3px;
-    '>🎮 Рекомендательная система для игр</h1>
+    '> Рекомендательная система для игр</h1>
 """, unsafe_allow_html=True)
+
 
 
 
