@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://i.imgur.com/ayF1mZA.gif');
+        background-image: url('https://imgur.com/Unj18hI.gif');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
