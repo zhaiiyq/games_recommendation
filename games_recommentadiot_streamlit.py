@@ -3,28 +3,58 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-def set_background():
-    st.markdown(
-        """
-        <style>
-        body {
-            background-image: url('https://media.tenor.com/images/3cde75d595f3ffb52e567256a32a12b5/tenor.gif');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }
-        .stApp {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-        </style>
-        """, 
-        unsafe_allow_html=True
-    )
+# Добавляем стили: фон, шрифт, неоновый эффект
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-# Установка фона
-set_background()
+    html, body, .stApp {
+        background-color: #0d0d1a;
+        background-image: url('https://images.unsplash.com/photo-1600369672065-a6d1e23d36e0?fit=crop&w=1950&q=80');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Orbitron', sans-serif;
+        color: #e0e0e0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+        color: #00ffff;
+        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    }
+
+    .stTextInput > div > div > input {
+        background-color: #1e1e2f;
+        color: #00ffff;
+        border: 1px solid #00ffff;
+    }
+
+    .stSelectbox > div > div > div > div {
+        background-color: #1e1e2f;
+        color: #00ffff;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        background-color: #1e1e2f;
+        border-radius: 10px 10px 0 0;
+        color: #00ffff;
+    }
+
+    .stButton > button {
+        background-color: #00ffff;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .stButton > button:hover {
+        background-color: #00cccc;
+        color: #000000;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Загружаем и готовим данные
 @st.cache_data
