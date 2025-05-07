@@ -110,7 +110,8 @@ def recommend(df, title, num_recommendations=5):
     return results
 
 # Интерфейс Streamlit
-st.title("Рекомендательная система для игр")
+st.markdown("<h1 style='text-align: center;'>🎮 Рекомендательная система для игр</h1>", unsafe_allow_html=True)
+
 
 # Загрузка файла через Streamlit
 uploaded_file = st.file_uploader("Загрузите файл с играми (CSV)", type=["csv"])
@@ -121,7 +122,8 @@ if uploaded_file:
     tab1, tab2 = st.tabs(["Поиск", "Рекомендации"])
 
     with tab1:
-        st.header("Поиск по запросу")
+        st.markdown("<h2>🔎 Поиск по запросу</h2>", unsafe_allow_html=True)
+
         query = st.text_input("Введите запрос для поиска (например, 'open world shooter'):")
         if query:
             results = search_recommendation(df, query)
