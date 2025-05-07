@@ -7,7 +7,7 @@ st.markdown("""
     <style>
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://raw.githubusercontent.com/zhaiiyq/games-recommendation/main/minecraft-cherry.gif');
+        background-image: url('https://imgur.com/a/V6sZ4Ej');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
