@@ -47,8 +47,7 @@ def set_retro_background():
     '''
     st.markdown(retro_style, unsafe_allow_html=True)
 
-# Установка фона
-set_background()
+
 
 # Загружаем и готовим данные
 @st.cache_data
