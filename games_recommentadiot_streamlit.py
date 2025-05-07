@@ -3,16 +3,18 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# CSS для фона с GIF
 def set_background():
-    # Путь к GIF в той же папке, что и скрипт
-    gif_path = 'minecraft-cherry.gif'  # Название вашего GIF файла
+    # Указываем путь к GIF
+    gif_path = './minecraft-cherry.gif'  # Путь к GIF в той же папке
+
     background_style = f'''
     <style>
     body {{
         background-image: url("{gif_path}");
         background-size: cover;
         background-attachment: fixed;
+        height: 100vh;
+        margin: 0;
     }}
     .stApp {{
         background-color: rgba(255, 255, 255, 0.8);
@@ -22,9 +24,6 @@ def set_background():
     </style>
     '''
     st.markdown(background_style, unsafe_allow_html=True)
-
-# Установка фона
-set_background()
 
 
 
