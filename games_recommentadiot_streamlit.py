@@ -5,24 +5,27 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # CSS для фона с GIF
 def set_background():
-    background_style = '''
+    # Путь к GIF в той же папке, что и скрипт
+    gif_path = 'minecraft-cherry.gif'  # Название вашего GIF файла
+    background_style = f'''
     <style>
-    body {
-        background-image: ('minecraft-cherry.gif');
+    body {{
+        background-image: url("{gif_path}");
         background-size: cover;
         background-attachment: fixed;
-    }
-    .stApp {
+    }}
+    .stApp {{
         background-color: rgba(255, 255, 255, 0.8);
         padding: 2rem;
         border-radius: 10px;
-    }
+    }}
     </style>
     '''
     st.markdown(background_style, unsafe_allow_html=True)
 
 # Установка фона
 set_background()
+
 
 
 # Загружаем и готовим данные
