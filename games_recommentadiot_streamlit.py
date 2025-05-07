@@ -10,7 +10,7 @@ st.markdown("""
 
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://raw.githubusercontent.com/zhaiiyq/games-recommendation/main/minecraft-cherry.gif');
+        background-image: url('https://raw.githubusercontent.com/zhaiiyq/main/main/minecraft-cherry.gif');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
