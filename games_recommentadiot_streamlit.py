@@ -10,7 +10,8 @@ st.markdown("""
 
     html, body, .stApp {
         background-color: #0d0d1a;
-        background-image: url('https://images.unsplash.com/photo-1600369672065-a6d1e23d36e0?fit=crop&w=1950&q=80');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                  url('https://wallpapercave.com/wp/wp10524761.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
