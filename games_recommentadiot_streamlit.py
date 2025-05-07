@@ -113,17 +113,18 @@ st.markdown("""
     <h1 style='
         text-align: center;
         color: white;
-        font-family: "Courier New", Courier, monospace;
+        font-family: "Press Start 2P", cursive;
         font-weight: bold;
         text-shadow: 
             2px 2px 0px black, 
             -2px -2px 0px black,  
             2px -2px 0px black, 
             -2px 2px 0px black;
-        font-size: 40px;
-        letter-spacing: 2px;
+        font-size: 50px;
+        letter-spacing: 3px;
     '>Рекомендательная система для игр</h1>
 """, unsafe_allow_html=True)
+
 
 
 
